@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#faf6f1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_action_bar_placeholder"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/textView"
+        android:background="#d65645" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:autoText="false"
+        android:background="@mipmap/bg_action_bar"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="帖男"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fee1b4"
+        android:textSize="26dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignRight="@+id/textView"
+        android:layout_below="@+id/main_action_bar_placeholder"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:onClick="openSettings"
+        android:padding="10dp"
+        android:src="@mipmap/ic_settings" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="openGithub"
+        android:paddingBottom="1dp"
+        android:paddingTop="6dp"
+        android:text="@string/app_version"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#c5a45e" />
+
+    <Button
+        android:id="@+id/button_accessible"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#24e2b379"
+        android:onClick="onButtonClicked"
+        android:text="@string/service_name"
+        android:textColor="#c5a45e"
+        android:layout_below="@id/textView3"
+        android:textSize="20dp" />
+</RelativeLayout>

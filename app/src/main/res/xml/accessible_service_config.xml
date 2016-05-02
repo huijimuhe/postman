@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_description"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged"
+    android:accessibilityFeedbackType="feedbackAllMask"
+    android:packageNames="com.netease.newsreader.activity"
+    android:notificationTimeout="10"
+    android:settingsActivity="com.huijimuhe.pman.activities.SettingsActivity"
+    android:accessibilityFlags="flagIncludeNotImportantViews|flagDefault"
+    android:canRetrieveWindowContent="true"/>
